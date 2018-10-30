@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -156,13 +157,13 @@
 <board>
 <plain>
 <wire x1="0" y1="-1.27" x2="19.05" y2="-1.27" width="0" layer="20"/>
-<wire x1="24.13" y1="3.81" x2="24.13" y2="30.48" width="0" layer="20"/>
+<wire x1="24.19" y1="3.68" x2="24.19" y2="30.35" width="0" layer="20"/>
 <wire x1="22.86" y1="31.75" x2="0" y2="31.75" width="0" layer="20"/>
-<wire x1="-1.27" y1="30.48" x2="-1.27" y2="0" width="0" layer="20"/>
-<wire x1="24.13" y1="3.81" x2="19.05" y2="-1.27" width="0" layer="20" curve="-90"/>
-<wire x1="0" y1="31.75" x2="-1.27" y2="30.48" width="0" layer="20" curve="90"/>
-<wire x1="24.13" y1="30.48" x2="22.86" y2="31.75" width="0" layer="20" curve="90"/>
-<wire x1="-1.27" y1="0" x2="0" y2="-1.27" width="0" layer="20" curve="90"/>
+<wire x1="-1.33" y1="30.48" x2="-1.33" y2="0" width="0" layer="20"/>
+<wire x1="24.19" y1="3.68" x2="19.05" y2="-1.27" width="0" layer="20" curve="-90"/>
+<wire x1="0" y1="31.75" x2="-1.33" y2="30.48" width="0" layer="20" curve="90"/>
+<wire x1="24.19" y1="30.35" x2="22.86" y2="31.75" width="0" layer="20" curve="90"/>
+<wire x1="-1.33" y1="0" x2="0" y2="-1.27" width="0" layer="20" curve="90"/>
 <polygon width="0" layer="21">
 <vertex x="17.78" y="29.21"/>
 <vertex x="19.685" y="29.21" curve="-90"/>
@@ -445,19 +446,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <designrules name="oshpark-2layer">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<description language="en">&lt;b&gt;OSH Park Design Rules&lt;/b&gt;
 &lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
+Please make sure your boards conform to these design rules.
+&lt;/p&gt;
 &lt;p&gt;
-Please make sure your boards conform to these design rules.</description>
+Note, that not all DRC settings must be set by the manufacturer. Several can be adjusted for the design, including those listed on our docs page here. 
+&lt;a href=&quot;http://docs.oshpark.com/design-tools/eagle/design-rules-files/&quot;&gt;Adjustable Settings&lt;/a&gt;
+&lt;/p&gt;</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
-<param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
+<param name="mtCopper" value="0.035559375mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.035559375mm"/>
+<param name="mtIsolate" value="1.6mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
 <param name="mdWireWire" value="6mil"/>
 <param name="mdWirePad" value="6mil"/>
 <param name="mdWireVia" value="6mil"/>
@@ -473,8 +472,8 @@ Please make sure your boards conform to these design rules.</description>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="13mil"/>
-<param name="msMicroVia" value="13mil"/>
+<param name="msDrill" value="10mil"/>
+<param name="msMicroVia" value="10mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -483,19 +482,19 @@ Please make sure your boards conform to these design rules.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="7mil"/>
+<param name="rlMinPadTop" value="5mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="7mil"/>
+<param name="rlMinPadInner" value="5mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="7mil"/>
+<param name="rlMinPadBottom" value="5mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="7mil"/>
+<param name="rlMinViaOuter" value="5mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="7mil"/>
+<param name="rlMinViaInner" value="5mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMinMicroViaOuter" value="5mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMinMicroViaInner" value="5mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
@@ -516,10 +515,14 @@ Please make sure your boards conform to these design rules.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -629,34 +632,34 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="26.035" y="5.08" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="S1" library="SparkFun-Switches" package="TACTILE_SWITCH_SMD_6.0X3.5MM" value="" x="6.985" y="3.81" smashed="yes" rot="R30">
+<attribute name="NAME" x="8.5725" y="1.649778125" size="0.8128" layer="25" font="vector" ratio="20" rot="R30" align="bottom-center"/>
 <attribute name="PROD_ID" value="SWCH-00815" x="6.985" y="3.81" size="1.778" layer="27" rot="R30" display="off"/>
 <attribute name="SF_SKU" value="COM-08229" x="6.985" y="3.81" size="1.778" layer="27" rot="R30" display="off"/>
-<attribute name="NAME" x="8.5725" y="1.649778125" size="0.8128" layer="25" font="vector" ratio="20" rot="R30" align="bottom-center"/>
 <attribute name="VALUE" x="7.9375" y="2.16021875" size="0.6096" layer="27" font="vector" ratio="20" rot="R30" align="top-center"/>
 </element>
 <element name="PRGM" library="SparkFun-Switches" package="TACTILE_SWITCH_SMD_6.0X3.5MM" value="" x="15.875" y="3.81" smashed="yes" rot="R30">
+<attribute name="NAME" x="17.4625" y="1.649778125" size="0.8128" layer="25" font="vector" ratio="20" rot="R30" align="bottom-center"/>
 <attribute name="PROD_ID" value="SWCH-00815" x="15.875" y="3.81" size="1.778" layer="27" rot="R30" display="off"/>
 <attribute name="SF_SKU" value="COM-08229" x="15.875" y="3.81" size="1.778" layer="27" rot="R30" display="off"/>
-<attribute name="NAME" x="17.4625" y="1.649778125" size="0.8128" layer="25" font="vector" ratio="20" rot="R30" align="bottom-center"/>
 <attribute name="VALUE" x="16.8275" y="2.16021875" size="0.6096" layer="27" font="vector" ratio="20" rot="R30" align="top-center"/>
 </element>
-<element name="U$1" library="arcadetv" package="EXT-PORT-AGB" value="EXT-PORT-AGB" x="11.43" y="24.13" rot="MR0"/>
+<element name="U$1" library="arcadetv" package="EXT-PORT-AGB" value="EXT-PORT-AGB" x="11.43" y="24.13" smashed="yes" rot="MR0"/>
 <element name="D1" library="SparkFun-LED" package="LED-0603" value="" x="15.24" y="10.795" smashed="yes" rot="R210">
 <attribute name="NAME" x="15.5575" y="10.245071875" size="0.8128" layer="25" font="vector" ratio="20" rot="R210" align="bottom-center"/>
 <attribute name="VALUE" x="14.9225" y="11.344925" size="0.6096" layer="27" font="vector" ratio="20" rot="R210" align="top-center"/>
 </element>
 <element name="R1" library="SparkFun-Resistors" package="0805" value=" " x="18.415" y="12.7" smashed="yes" rot="R30">
-<attribute name="PROD_ID" value=" " x="18.415" y="12.7" size="1.778" layer="27" rot="R30" display="off"/>
 <attribute name="NAME" x="19.2405" y="11.24739375" size="0.8128" layer="25" font="vector" ratio="20" rot="R30" align="bottom-center"/>
+<attribute name="PROD_ID" value=" " x="18.415" y="12.7" size="1.778" layer="27" rot="R30" display="off"/>
 </element>
 <element name="R2" library="SparkFun-Resistors" package="0805" value=" " x="8.255" y="12.065" smashed="yes">
-<attribute name="PROD_ID" value=" " x="8.255" y="12.065" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="8.255" y="10.414" size="0.8128" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value=" " x="8.255" y="12.065" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="8.255" y="11.176" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="C1" library="SparkFun-Capacitors" package="0805" value="10uF" x="4.445" y="12.065" smashed="yes" rot="R180">
-<attribute name="PROD_ID" value="CAP-11330" x="4.445" y="12.065" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="4.445" y="11.176" size="0.8128" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
+<attribute name="PROD_ID" value="CAP-11330" x="4.445" y="12.065" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 </elements>
 <signals>
@@ -730,7 +733,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R2" pad="1"/>
 <contactref element="S1" pad="1"/>
 <contactref element="C1" pad="1"/>
-<wire x1="4.075" y1="2.41701875" x2="4.25701875" y2="2.235" width="0.4064" layer="1"/>
 <wire x1="0" y1="16.51" x2="2.54" y2="13.97" width="0.4064" layer="1"/>
 <wire x1="2.54" y1="13.97" x2="5.08" y2="13.97" width="0.4064" layer="1"/>
 <wire x1="5.08" y1="13.97" x2="5.345" y2="13.705" width="0.4064" layer="1"/>
@@ -770,6 +772,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="12.18201875" y1="1.27" x2="13.14701875" y2="2.235" width="0.4064" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>
