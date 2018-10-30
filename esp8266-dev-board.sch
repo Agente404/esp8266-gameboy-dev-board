@@ -2607,8 +2607,8 @@ DIN A4, landscape with location and doc. field</description>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$1" library="arcadetv" deviceset="EXT-PORT-AGB" device=""/>
 <part name="D1" library="SparkFun-LED" deviceset="LED" device="0603" value="red"/>
-<part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805" value=" "/>
-<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805" value=" "/>
+<part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805" value=" 4.7k"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805" value="4.7k"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
