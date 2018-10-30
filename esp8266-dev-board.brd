@@ -445,7 +445,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <clearance class="1" value="0.254"/>
 </class>
 </classes>
-<designrules name="oshpark-2layer">
+<designrules name="oshpark-2layer *">
 <description language="en">&lt;b&gt;OSH Park Design Rules&lt;/b&gt;
 &lt;p&gt;
 Please make sure your boards conform to these design rules.
@@ -519,10 +519,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
-<param name="checkValues" value="0"/>
+<param name="checkValues" value="1"/>
 <param name="checkNames" value="1"/>
 <param name="checkWireStubs" value="1"/>
-<param name="checkPolygonWidth" value="0"/>
+<param name="checkPolygonWidth" value="1"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -623,11 +623,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="SparkFun-Connectors" package="1X08_ROUND" value="" x="0" y="6.35" smashed="yes" rot="R90">
+<element name="J1" library="SparkFun-Connectors" package="1X08_ROUND" value="left" x="0" y="6.35" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="CONN-08437" x="0" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="3.175" y="5.08" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="J2" library="SparkFun-Connectors" package="1X08_ROUND" value="" x="22.86" y="6.35" smashed="yes" rot="R90">
+<element name="J2" library="SparkFun-Connectors" package="1X08_ROUND" value="right" x="22.86" y="6.35" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="CONN-08437" x="22.86" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="26.035" y="5.08" size="1.27" layer="27" rot="R90"/>
 </element>
@@ -644,7 +644,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="16.8275" y="2.16021875" size="0.6096" layer="27" font="vector" ratio="20" rot="R30" align="top-center"/>
 </element>
 <element name="U$1" library="arcadetv" package="EXT-PORT-AGB" value="EXT-PORT-AGB" x="11.43" y="24.13" smashed="yes" rot="MR0"/>
-<element name="D1" library="SparkFun-LED" package="LED-0603" value="" x="15.24" y="10.795" smashed="yes" rot="R210">
+<element name="D1" library="SparkFun-LED" package="LED-0603" value="red" x="15.24" y="10.795" smashed="yes" rot="R210">
 <attribute name="NAME" x="15.5575" y="10.245071875" size="0.8128" layer="25" font="vector" ratio="20" rot="R210" align="bottom-center"/>
 <attribute name="VALUE" x="14.9225" y="11.344925" size="0.6096" layer="27" font="vector" ratio="20" rot="R210" align="top-center"/>
 </element>

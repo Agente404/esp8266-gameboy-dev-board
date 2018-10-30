@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2597,47 +2598,84 @@ DIN A4, landscape with location and doc. field</description>
 </class>
 </classes>
 <parts>
-<part name="J1" library="SparkFun-Connectors" deviceset="M08" device=""/>
-<part name="J2" library="SparkFun-Connectors" deviceset="M08" device=""/>
+<part name="J1" library="SparkFun-Connectors" deviceset="M08" device="" value="left"/>
+<part name="J2" library="SparkFun-Connectors" deviceset="M08" device="" value="right"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.0X3.5MM" value=""/>
 <part name="PRGM" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.0X3.5MM" value=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$1" library="arcadetv" deviceset="EXT-PORT-AGB" device=""/>
-<part name="D1" library="SparkFun-LED" deviceset="LED" device="0603"/>
+<part name="D1" library="SparkFun-LED" deviceset="LED" device="0603" value="red"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805" value=" "/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805" value=" "/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="10UF" device="-0805-10V-10%" value="10uF"/>
-<part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
+<part name="FRAME1" library="frames" deviceset="A4L-LOC" device="" value="default"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="J1" gate="G$1" x="101.6" y="96.52"/>
-<instance part="J2" gate="G$1" x="172.72" y="96.52" rot="MR0"/>
-<instance part="GND1" gate="1" x="119.38" y="76.2"/>
-<instance part="S1" gate="G$1" x="78.74" y="88.9" rot="R270"/>
+<instance part="J1" gate="G$1" x="101.6" y="96.52" smashed="yes">
+<attribute name="VALUE" x="96.52" y="83.82" size="1.778" layer="96"/>
+<attribute name="NAME" x="96.52" y="109.982" size="1.778" layer="95" display="off"/>
+</instance>
+<instance part="J2" gate="G$1" x="172.72" y="96.52" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="177.8" y="83.82" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="177.8" y="109.982" size="1.778" layer="95" rot="MR0"/>
+</instance>
+<instance part="GND1" gate="1" x="119.38" y="76.2" smashed="yes">
+<attribute name="VALUE" x="116.84" y="73.66" size="1.778" layer="96"/>
+</instance>
+<instance part="S1" gate="G$1" x="78.74" y="88.9" smashed="yes" rot="R270">
+<attribute name="NAME" x="80.264" y="88.9" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="78.232" y="88.9" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+</instance>
 <instance part="PRGM" gate="G$1" x="68.58" y="96.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="70.104" y="96.52" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="68.072" y="96.52" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
 </instance>
-<instance part="GND2" gate="1" x="68.58" y="76.2"/>
-<instance part="GND3" gate="1" x="78.74" y="76.2"/>
-<instance part="U$1" gate="G$1" x="137.16" y="93.98" rot="MR0"/>
-<instance part="D1" gate="G$1" x="187.96" y="88.9"/>
-<instance part="R1" gate="G$1" x="187.96" y="99.06" rot="R90"/>
-<instance part="R2" gate="G$1" x="78.74" y="101.6" rot="R90"/>
-<instance part="SUPPLY1" gate="G$1" x="154.94" y="109.22"/>
-<instance part="SUPPLY2" gate="G$1" x="78.74" y="109.22"/>
-<instance part="SUPPLY3" gate="G$1" x="187.96" y="109.22"/>
-<instance part="C1" gate="G$1" x="86.36" y="86.36"/>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="GND2" gate="1" x="68.58" y="76.2" smashed="yes">
+<attribute name="VALUE" x="66.04" y="73.66" size="1.778" layer="96"/>
+</instance>
+<instance part="GND3" gate="1" x="78.74" y="76.2" smashed="yes">
+<attribute name="VALUE" x="76.2" y="73.66" size="1.778" layer="96"/>
+</instance>
+<instance part="U$1" gate="G$1" x="137.16" y="93.98" smashed="yes" rot="MR0"/>
+<instance part="D1" gate="G$1" x="187.96" y="88.9" smashed="yes">
+<attribute name="NAME" x="184.531" y="84.328" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="189.865" y="85.598" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+</instance>
+<instance part="R1" gate="G$1" x="187.96" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="186.436" y="99.06" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="189.484" y="99.06" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R2" gate="G$1" x="78.74" y="101.6" smashed="yes" rot="R90">
+<attribute name="NAME" x="77.216" y="101.6" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="80.264" y="101.6" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="SUPPLY1" gate="G$1" x="154.94" y="109.22" smashed="yes">
+<attribute name="VALUE" x="154.94" y="112.014" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY2" gate="G$1" x="78.74" y="109.22" smashed="yes">
+<attribute name="VALUE" x="78.74" y="112.014" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY3" gate="G$1" x="187.96" y="109.22" smashed="yes">
+<attribute name="VALUE" x="187.96" y="112.014" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="C1" gate="G$1" x="86.36" y="86.36" smashed="yes">
+<attribute name="NAME" x="87.884" y="89.281" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="87.884" y="84.201" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2654,6 +2692,8 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="119.38" y1="96.52" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <pinref part="U$1" gate="G$1" pin="SHIELD"/>
+<junction x="119.38" y="93.98"/>
+<junction x="119.38" y="91.44"/>
 </segment>
 <segment>
 <pinref part="PRGM" gate="G$1" pin="2"/>
@@ -2668,6 +2708,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="86.36" y1="83.82" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="81.28" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
+<junction x="78.74" y="81.28"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2726,6 +2767,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="78.74" y1="95.25" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
 <label x="83.566" y="95.25" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="1"/>
+<junction x="78.74" y="95.25"/>
 </segment>
 </net>
 <net name="N$4" class="0">
