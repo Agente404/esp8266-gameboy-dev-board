@@ -14,6 +14,8 @@ Hence it is not compatible with Wemos SD card shield
 
 The part list is included as a Digikey shopping cart. Quantities are for 12 boards.
 
+Note that EXT PORT AGB connector **is not included**. It must be sourced elsewhere.
+
 ## License
 
 See the [blog post here](https://poyu.xyz/projects/esp8266-gameboy-dev-board/) of the original author!
