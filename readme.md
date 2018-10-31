@@ -8,7 +8,11 @@ This board uses the following pins:
 
 D0, D1, D2, D3 (Pull GPIO0 to ground), D4, D8
 
-Hence **IT IS** compatible with Wemos SD card shield
+Hence **IT IS** compatible with Wemos SD card shield. I've remapped conflicting pins as following:
+
+* D5 -> D4
+* D6 -> D0
+* D7 -> D8
 
 ## Part List
 
