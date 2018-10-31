@@ -12,7 +12,7 @@ Hence it is not compatible with Wemos SD card shield
 
 ## Part List
 
-The part list is included as a Digikey shopping cart. Quantities are for 12 boards.
+The part list is included as a Digikey shopping cart. Quantities are for one (1) board.
 
 Note that EXT PORT AGB connector **is not included**. It must be sourced elsewhere.
 
