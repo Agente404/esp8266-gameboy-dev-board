@@ -8,7 +8,7 @@ This board uses the following pins:
 
 D1, D2, D3 (Pull GPIO0 to ground), D5, D6, D7
 
-Hence **it is NOT compatible** with Wemos SD card shield
+Hence **it is NOT compatible** with Wemos SD card shield (check the *microsd* branch for microSD shield compatibility)
 
 ## Part List
 
