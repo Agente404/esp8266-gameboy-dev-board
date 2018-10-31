@@ -10,6 +10,11 @@ D1, D2, D3 (Pull GPIO0 to ground), D5, D6, D7
 
 Hence it is not compatible with Wemos SD card shield
 
+## Part List
+
+The part list is included as a Digikey shopping cart. Quantities are for one (1) board.
+
+Note that EXT PORT AGB connector **is not included**. It must be sourced elsewhere.
 
 ## License
 
