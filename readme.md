@@ -6,9 +6,9 @@ Your go to dev board for Gameboy accessories development. Put it on top of Wemos
 
 This board uses the following pins:
 
-D1, D2, D3 (Pull GPIO0 to ground), D5, D6, D7
+D0, D1, D2, D3 (Pull GPIO0 to ground), D4, D8
 
-Hence it is not compatible with Wemos SD card shield
+Hence **IT IS** compatible with Wemos SD card shield
 
 ## Part List
 
